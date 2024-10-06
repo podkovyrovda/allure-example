@@ -1,0 +1,1 @@
+[{"uid":"dcd86be769f4eaf7","name":"sample test","time":{"start":1728217274010,"stop":1728217274012,"duration":2},"status":"passed","severity":"normal"},{"uid":"bf50c5b97a5afaca","name":"flaky test","time":{"start":1728217274012,"stop":1728217274013,"duration":1},"status":"passed","severity":"normal"}]
