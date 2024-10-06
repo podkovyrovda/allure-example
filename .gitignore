@@ -1,0 +1,4 @@
+../../allure-jest-circus-example/node_modules
+allure-results
+out
+.DS_Store

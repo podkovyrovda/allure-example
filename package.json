@@ -1,0 +1,21 @@
+{
+  "name": "vitest",
+  "type": "module",
+  "version": "1.0.0",
+  "description": "",
+  "scripts": {
+    "pretest": "rimraf ./allure-results",
+    "test": "vitest run"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/node": "^22.0.0",
+    "allure-js-commons": "^3.0.0-beta.7",
+    "allure-vitest": "^3.0.0-beta.7",
+    "vitest": "^2.0.4",
+    "prettier": "^3.0.3",
+    "rimraf": "^5.0.1"
+  }
+}
