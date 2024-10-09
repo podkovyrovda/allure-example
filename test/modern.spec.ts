@@ -5,6 +5,7 @@ it("sample test", async () => {
     await allure.owner("John Doe x");
     await allure.issue("https://example.org", "JIRA-2");
     await allure.step("step 1", async () => {
+        
         await allure.step("step 1.2", async () => {
             await allure.attachment("text attachment", "some data", "text/plain");
         });

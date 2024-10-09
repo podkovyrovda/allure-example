@@ -5,17 +5,20 @@
   "description": "",
   "scripts": {
     "pretest": "rimraf ./allure-results",
-    "test": "vitest run"
+    "test": "vitest run",
+    "playwright-test": "playwright test"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "devDependencies": {
+    "@playwright/test": "^1.47.2",
     "@types/node": "^22.0.0",
     "allure-js-commons": "^3.0.0-beta.7",
+    "allure-playwright": "^3.0.0-beta.7",
     "allure-vitest": "^3.0.0-beta.7",
-    "vitest": "^2.0.4",
     "prettier": "^3.0.3",
-    "rimraf": "^5.0.1"
+    "rimraf": "^5.0.1",
+    "vitest": "^2.0.4"
   }
 }
