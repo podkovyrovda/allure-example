@@ -3,13 +3,14 @@ import * as allure from "allure-js-commons";
 
 test('search for issue', async ({page}) => {
   await allure.step("go to github", async () => {
-    await page.goto('https://github.com/');
+    await page.goto('https://github.com/search?q=&type=repositories');
   })
 
   await allure.step("search `allure-example`", async () => {
-    await page.locator(".js-site-search-type-field").click();
-    await page.locator(".js-site-search-type-field").fill("allure-example");
-    await page.locator(".js-site-search-type-field").press('Enter');
+    await page.click('[aria-label="Search GitHub"]');
+    await page.fill('[aria-label="Search GitHub"]', "allure-example");
+    await page.press('[aria-label="Search GitHub"]', "Enter");
+
   })
 
   await allure.step("go to repository", async () => {
