@@ -2,6 +2,7 @@ import {defineConfig, devices} from "@playwright/test";
 
 export default defineConfig({
   testDir: "./playwright-test",
+  timeout: 5000,
   use: {
     screenshot: 'only-on-failure'
   },

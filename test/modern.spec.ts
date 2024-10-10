@@ -33,6 +33,9 @@ it("test with metadata", async () => {
 
 it("test with runtime error", async () => {
     await allure.owner("Andrei P");
+  await allure.owner("Andrei P");
+  await allure.issue("#123");
+  await allure.severity(allure.Severity.CRIT
     // @ts-ignore
     expect(a).toBe("a")
 });
